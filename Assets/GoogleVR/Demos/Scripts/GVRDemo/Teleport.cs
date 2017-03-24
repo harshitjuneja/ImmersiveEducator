@@ -14,13 +14,16 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Collider))]
 public class Teleport : MonoBehaviour {
+
   private Vector3 startingPosition;
 
   public Material inactiveMaterial;
   public Material gazedAtMaterial;
+  public string sceneName;
 
   void Start() {
     startingPosition = transform.localPosition;
@@ -39,10 +42,8 @@ public class Teleport : MonoBehaviour {
     transform.localPosition = startingPosition;
   }
 
-  public void TeleportRandomly() {
-    Vector3 direction = Random.onUnitSphere;
-    direction.y = Mathf.Clamp(direction.y, 0.5f, 1f);
-    float distance = 2 * Random.value + 1.5f;
-    transform.localPosition = direction * distance;
-  }
+	public void LoadScene(){
+		Debug.Log ("Inside");
+		SceneManager.LoadScene (sceneName, LoadSceneMode.Single);
+	}
 }
