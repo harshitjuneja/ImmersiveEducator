@@ -7428,7 +7428,7 @@ GameObject:
   - component: {fileID: 1776033383}
   - component: {fileID: 1776033382}
   m_Layer: 0
-  m_Name: CubeLoop
+  m_Name: CubeSearch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7485,7 +7485,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1776033383}
-          m_MethodName: TeleportRandomly
+          m_MethodName: LoadScene
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7562,7 +7562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inactiveMaterial: {fileID: 2100000, guid: 0edec395166a3244592f3532c7ce794c, type: 2}
   gazedAtMaterial: {fileID: 2100000, guid: daad62324deb0cf448e5c805c8459bff, type: 2}
-  sceneName: 
+  sceneName: binarySearch
 --- !u!114 &1776033384
 MonoBehaviour:
   m_ObjectHideFlags: 0

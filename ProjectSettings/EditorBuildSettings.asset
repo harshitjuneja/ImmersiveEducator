@@ -6,8 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GoogleVR/Demos/Scenes/GVRDemo.unity
+    path: Assets/Scenes/GVRDemo.unity
   - enabled: 1
     path: Assets/Scenes/main.unity
   - enabled: 1
-    path: Assets/Scenes/loop.unity
+    path: Assets/Scenes/binarySearch.unity
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
