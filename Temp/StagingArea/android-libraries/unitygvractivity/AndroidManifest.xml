@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vr.gvr.platform.unity">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="22"/>
+</manifest>

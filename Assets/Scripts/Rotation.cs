@@ -30,6 +30,7 @@ public class Rotation : MonoBehaviour {
 
 	public void selected(){
 		if (gameObject.name == "Apple") {
+			Destroy (gameObject);
 			commandText.text = "Congrats. \nAn apple a day keeps doctor away.\n" +
 				"if (fruit == Banana) { Go Back };";
 			c = 1;
