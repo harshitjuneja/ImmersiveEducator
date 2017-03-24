@@ -7147,7 +7147,7 @@ GameObject:
   - component: {fileID: 1504135829}
   - component: {fileID: 1504135828}
   m_Layer: 5
-  m_Name: binary_search_canvas (1)
+  m_Name: selection_sort_canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
