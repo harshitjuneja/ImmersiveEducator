@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Rotation : MonoBehaviour {
 
 	float Speed = 10;
 	public Text commandText;
+	static int c = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -28,9 +30,11 @@ public class Rotation : MonoBehaviour {
 
 	public void selected(){
 		if (gameObject.name == "Apple") {
-			commandText.text = "if(fruit == Strawberry){\n\tYou win\n}else if(fruit == Banana){\n\tYou win}else{\nYou lose\n}";
-		} else {
-			Debug.Log ("Try Again");
+			commandText.text = "Congrats. \nAn apple a day keeps doctor away.\n" +
+				"if (fruit == Banana) { Go Back };";
+			c = 1;
+		} else if (gameObject.name == "Banana" && c == 1){
+			SceneManager.LoadScene (0, LoadSceneMode.Single);
 		}
 	}
 }

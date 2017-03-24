@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/loop.unity
+- path: Assets/GoogleVR/Demos/Scenes/GVRDemo.unity
   isLoaded: 1
   isActive: 1
