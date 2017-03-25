@@ -12,6 +12,7 @@ public class BinarySearch : MonoBehaviour {
 	public Text canvasText;
 	Animator anim;
 	public GameObject[] balls1;
+	public AudioSource audioGood, audioBad;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +25,7 @@ public class BinarySearch : MonoBehaviour {
 	}
 
 	public void selected(){
-		Debug.Log (gameObject.name);
+		int c_old = step;
 		switch (step) {
 		case 0:
 			if (gameObject.name == "ball5") {
@@ -51,13 +52,19 @@ public class BinarySearch : MonoBehaviour {
 				++step;
 			}
 			break;
-		case 3:
-			if (gameObject.tag == "Respawn") {
-				SceneManager.LoadScene (0, LoadSceneMode.Single);
-			}
-			break;
+
 		}
-		foreach(GameObject g in balls1)
-			Destroy(g);
+
+		if (gameObject.tag == "Respawn") {
+			SceneManager.LoadScene (0, LoadSceneMode.Single);
+		}
+
+		if (step == c_old) {
+			audioBad.Play ();
+		} else {
+			audioGood.Play ();
+			foreach(GameObject g in balls1)
+				Destroy(g);
+		}
 	}
 }

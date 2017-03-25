@@ -9,8 +9,10 @@ public class SelectionSort : MonoBehaviour {
 	static int c = 0;
 	Animator anim;
 	public Text canvasText;
+	public AudioSource audioGood, audioBad;
 	// Use this for initialization
 	void Start () {
+		c = 0;
 		anim = gameObject.GetComponent<Animator> ();
 	}
 	
@@ -20,6 +22,7 @@ public class SelectionSort : MonoBehaviour {
 	}
 
 	public void selection(){
+		int c_old = c;
 		switch (c) {
 		case 0:
 			if (gameObject.name == "ball1") {
@@ -85,5 +88,12 @@ public class SelectionSort : MonoBehaviour {
 			}
 			break;
 		}
+
+		if (c_old == c) {
+			audioBad.Play ();
+		}else{
+			audioGood.Play ();
+		}
 	}
+
 }
