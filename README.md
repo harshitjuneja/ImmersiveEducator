@@ -26,6 +26,10 @@ Environment
 
 <a href="http://tinypic.com?ref=8y8c4m" target="_blank"><img src="http://i64.tinypic.com/8y8c4m.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
 
+## Download 
+
+Download the compiled apk from http://tiny.cc/immEdu
+
 
 ## Stay in Touch
 - [Follow @sayhitoharshit on Twitter](https://twitter.com/sayhitoharshit).
